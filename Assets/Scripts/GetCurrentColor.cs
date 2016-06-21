@@ -54,7 +54,7 @@ public class GetCurrentColor : MonoBehaviour {
 				pixelUV.y *= rt.height;
 				tex.ReadPixels(new Rect((int)pixelUV.x, (int)pixelUV.y,1,1),0,0);
 				Color pixelColor = tex.GetPixel(0,0);
-				Debug.Log("Hit pixel : " + pixelUV.x + " : " + pixelUV.y + "\n" + pixelColor.r + " " + pixelColor.g + " " + pixelColor.g + " " );
+				Debug.Log("Hit pixel : " + pixelUV.x + " : " + pixelUV.y + "\n" + pixelColor.r + " " + pixelColor.g + " " + pixelColor.b + " " );
 			} 
 		}else {
 			Debug.Log ("Hit nothing!");
