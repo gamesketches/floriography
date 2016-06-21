@@ -17,13 +17,46 @@ public class GetCurrentColor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		RaycastHit2D hit = Physics2D.Raycast (transform.position, Vector2.zero,100f, targetBackgroundLayer);
-		if (hit.collider != null) {
-			if (GetSpritePixelColorUnderMyTransform (hit.collider.gameObject.GetComponent<SpriteRenderer>(), out targetColor)) {
-				Debug.Log ("Color is " + targetColor.r + " " + targetColor.g + " "+ targetColor.b + " ");
-			}
 
-		} else {
+		Debug.DrawRay (transform.position, Vector3.forward);
+		RaycastHit hit = new RaycastHit ();
+		if (Physics.Raycast (transform.position, Vector3.forward, out hit, 100f, targetBackgroundLayer)) {
+			if (hit.collider != null) {
+				if (GetSpritePixelColorUnderMyTransform (hit.collider.gameObject.GetComponent<SpriteRenderer> (), out targetColor)) {
+					Debug.Log ("Color is " + targetColor.r + " " + targetColor.g + " " + targetColor.b + " ");
+				}
+				Renderer rend = hit.transform.GetComponent<Renderer>();
+				MeshCollider meshCollider = hit.collider as MeshCollider;
+				if (rend == null || rend.material == null || rend.material.mainTexture == null || meshCollider == null) {
+					if (rend == null) {
+						Debug.Log ("renderer is null!");
+					}
+					if (rend.material == null) {
+						Debug.Log ("render.material is null!");
+					}
+					if (rend.material.mainTexture == null) {
+						Debug.Log ("render.material.mainTexture is null!");
+					}
+					if (meshCollider == null) {
+						Debug.Log ("meshCollider is null!");
+					}
+					return;
+				}
+				RenderTexture rt = rend.material.mainTexture as RenderTexture;
+				if (rt == null) {
+					Debug.Log ("Not a render texture!");
+					return;
+				}
+				RenderTexture.active = rt;
+				Texture2D tex = new Texture2D (1, 1, TextureFormat.RGB24, false);
+				Vector2 pixelUV = hit.textureCoord;
+				pixelUV.x *= rt.width;
+				pixelUV.y *= rt.height;
+				tex.ReadPixels(new Rect((int)pixelUV.x, (int)pixelUV.y,1,1),0,0);
+				Color pixelColor = tex.GetPixel(0,0);
+				Debug.Log("Hit pixel : " + pixelUV.x + " : " + pixelUV.y + "\n" + pixelColor.r + " " + pixelColor.g + " " + pixelColor.g + " " );
+			} 
+		}else {
 			Debug.Log ("Hit nothing!");
 		}
 	}
