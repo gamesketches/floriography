@@ -1,10 +1,13 @@
-﻿Shader "Thesis Jam/Stripes"
+﻿//Red at _Breakpoint = 0.5
+//Red shrinks, and is surrounded by yellow, as _Breakpoint approaches 0
+
+Shader "Thesis Jam/Horizontal line"
 {
 	Properties
 	{
 		_Yellow ("Yellow", Color) = (1.0, 1.0, 0.0, 1.0)
 		_Red ("Red", Color) = (1.0, 0.0, 0.0, 1.0)
-		_Multiplier ("Multiplier", float) = 20
+		_Breakpoint ("Breakpoint", float) = 0.3
 	}
 
 	Subshader
@@ -34,15 +37,17 @@
 	        	return output;
 	        }
 
-	        float _Multiplier;
+	        float _Breakpoint;
 	        float4 _Yellow;
 	        float4 _Red;
 
 	        float4 frag(vertexOutput input) : COLOR 
 	        {
-	        	if (2 * sin(_Multiplier * input.posInObjectCoords.y) > 1.0) { return _Yellow; }
-
-	        	return _Red;
+	        	if (input.posInObjectCoords.y > _Breakpoint || input.posInObjectCoords.y < -_Breakpoint) 
+	       		{
+	        		return _Yellow;
+	            }
+	            return _Red;
 	        }
 	       
 			ENDCG

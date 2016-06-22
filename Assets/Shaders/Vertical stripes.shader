@@ -1,7 +1,7 @@
-﻿//Red at _Multiplier == 0
-//Gets more yellow as _Multiplier increases
+﻿//Red at _Multiplier = 0
+//Yellow appears, and red shrinks, as _Multiplier increases
 
-Shader "Thesis Jam/Crossing lines"
+Shader "Thesis Jam/Vertical stripes"
 {
 	Properties
 	{
@@ -43,10 +43,7 @@ Shader "Thesis Jam/Crossing lines"
 
 	        float4 frag(vertexOutput input) : COLOR 
 	        {
-	        	if (2 * sin(_Multiplier * input.posInObjectCoords.y) > 0.5)
-	        	{
-	        		if (2 * sin(_Multiplier * input.posInObjectCoords.x) > 0.5) { return _Yellow; }
-	        	}
+	        	if (2 * sin(_Multiplier * input.posInObjectCoords.x) > 1.0) { return _Yellow; }
 
 	        	return _Red;
 	        }

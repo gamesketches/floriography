@@ -1,4 +1,7 @@
-﻿Shader "Thesis Jam/Single line"
+﻿//Red at _Breakpoint = 0.5
+//Red shrinks, and is surrounded by yellow, as _Breakpoint approaches 0
+
+Shader "Thesis Jam/Vertical line"
 {
 	Properties
 	{
@@ -40,7 +43,7 @@
 
 	        float4 frag(vertexOutput input) : COLOR 
 	        {
-	        	if (input.posInObjectCoords.y > _Breakpoint || input.posInObjectCoords.y < -_Breakpoint) 
+	        	if (input.posInObjectCoords.x > _Breakpoint || input.posInObjectCoords.x < -_Breakpoint) 
 	       		{
 	        		return _Yellow;
 	            }
