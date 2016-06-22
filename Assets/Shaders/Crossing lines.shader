@@ -1,9 +1,10 @@
-﻿Shader "Thesis Jam/Circle"
+﻿Shader "Thesis Jam/Crossing lines"
 {
 	Properties
 	{
-		_Color ("Main Color", Color) = (1, 0.5, 0.5, 1)
-		_Radius ("Radius", float) = 0.1
+		_Yellow ("Yellow", Color) = (1.0, 1.0, 0.0, 1.0)
+		_Red ("Red", Color) = (1.0, 0.0, 0.0, 1.0)
+		_Multiplier ("Multiplier", float) = 20
 	}
 
 	Subshader
@@ -33,15 +34,18 @@
 	        	return output;
 	        }
 
-	        float _Radius;
-	        float4 _Center = (0.0, 0.0, 0.0, 0.0);
+	        float _Multiplier;
+	        float4 _Yellow;
+	        float4 _Red;
 
 	        float4 frag(vertexOutput input) : COLOR 
 	        {
-	        	if (distance(input.posInObjectCoords, _Center) > _Radius) 
-	        		{ return float4(1.0, 1.0, 0.0, 1.0); }
+	        	if (2 * sin(_Multiplier * input.posInObjectCoords.y) > 0.5)
+	        	{
+	        		if (2 * sin(_Multiplier * input.posInObjectCoords.x) > 0.5) { return _Yellow; }
+	        	}
 
-	        	return float4(1.0, 0.0, 0.0, 1.0);
+	        	return _Red;
 	        }
 	       
 			ENDCG
