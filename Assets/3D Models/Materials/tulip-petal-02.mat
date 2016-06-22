@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Horiz line
+  m_Name: tulip-petal-02
   m_Shader: {fileID: 4800000, guid: e2e4c8209adf84e6ca677194a882c5e5, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -81,10 +81,6 @@ Material:
     m_Floats:
       data:
         first:
-          name: _Radius
-        second: 1.14
-      data:
-        first:
           name: _SrcBlend
         second: 1
       data:
@@ -134,15 +130,11 @@ Material:
       data:
         first:
           name: _Breakpoint
-        second: 0.5
+        second: 0.01
       data:
         first:
           name: _Multiplier
-        second: 20
-      data:
-        first:
-          name: _Divisor
-        second: 2
+        second: 392.9
     m_Colors:
       data:
         first:
@@ -151,7 +143,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
       data:
         first:
           name: _Yellow
