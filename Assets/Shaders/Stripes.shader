@@ -4,7 +4,7 @@
 	{
 		_Yellow ("Yellow", Color) = (1.0, 1.0, 0.0, 1.0)
 		_Red ("Red", Color) = (1.0, 0.0, 0.0, 1.0)
-		_Breakpoint ("Breakpoint", float) = 0.5
+		_Multiplier ("Multiplier", float) = 20
 	}
 
 	Subshader
@@ -34,17 +34,15 @@
 	        	return output;
 	        }
 
-	        float _Breakpoint;
+	        float _Multiplier;
 	        float4 _Yellow;
 	        float4 _Red;
 
 	        float4 frag(vertexOutput input) : COLOR 
 	        {
-	        	if (sin(input.posInObjectCoords.x) > _Breakpoint) 
-	       		{
-	        		return _Yellow;
-	            }
-	            return _Red;
+	        	if (2 * sin(_Multiplier * input.posInObjectCoords.y) > 1.0) { return _Yellow; }
+
+	        	return _Red;
 	        }
 	       
 			ENDCG
