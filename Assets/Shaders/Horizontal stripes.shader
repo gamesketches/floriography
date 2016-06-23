@@ -14,6 +14,8 @@ Shader "Thesis Jam/Horizontal stripes"
 	{
 		Pass
 		{
+			Cull Off
+
 			CGPROGRAM
 
 			#pragma vertex vert  

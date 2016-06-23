@@ -14,6 +14,8 @@ Shader "Thesis Jam/Vertical line"
 	{
 		Pass
 		{
+			Cull Off
+
 			CGPROGRAM
 
 			#pragma vertex vert  

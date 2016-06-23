@@ -14,6 +14,8 @@ Shader "Thesis Jam/Crossing lines"
 	{
 		Pass
 		{
+			Cull Off
+
 			CGPROGRAM
 
 			#pragma vertex vert  
