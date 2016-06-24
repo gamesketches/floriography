@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: tulip-petal-02
-  m_Shader: {fileID: 4800000, guid: 23e138aa3b57c4bd4952f12e002649e2, type: 3}
+  m_Name: Stem
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -81,10 +81,6 @@ Material:
     m_Floats:
       data:
         first:
-          name: _Radius
-        second: 1.6
-      data:
-        first:
           name: _SrcBlend
         second: 1
       data:
@@ -131,14 +127,6 @@ Material:
         first:
           name: _Metallic
         second: 0
-      data:
-        first:
-          name: _Breakpoint
-        second: 0.01
-      data:
-        first:
-          name: _Multiplier
-        second: 0
     m_Colors:
       data:
         first:
@@ -147,12 +135,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-      data:
-        first:
-          name: _Yellow
-        second: {r: 1, g: 1, b: 0, a: 1}
-      data:
-        first:
-          name: _Red
-        second: {r: 1, g: 0, b: 0, a: 1}
+        second: {r: 0.22745098, g: 0.37254903, b: 0.043137256, a: 1}
