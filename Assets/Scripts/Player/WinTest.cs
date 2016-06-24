@@ -12,6 +12,6 @@ public class WinTest : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.tag.Contains("Girl")) { winLoseManager.PlayerWins(); }
+		if (other.transform.name.Contains("Bee")) { winLoseManager.PlayerWins(); }
 	}
 }
