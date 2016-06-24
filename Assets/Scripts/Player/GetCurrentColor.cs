@@ -19,11 +19,13 @@ public class GetCurrentColor : MonoBehaviour {
 	void Update () {
 		
 
-		Debug.DrawRay (transform.position, Vector3.up * -1);
+		Debug.DrawRay (transform.position, Vector3.up * -1, Color.blue, 5.0f, false);
+		//Debug.DrawRay (transform.position, Vector3.down, Color.blue, 5.0f, false);
 		RaycastHit hit = new RaycastHit ();
 		Vector3 raycastOrigin = transform.position;
 		raycastOrigin.y += 1f;
 		if (Physics.Raycast (raycastOrigin, Vector3.up * -1, out hit, 100f, targetBackgroundLayer)) {
+		//if (Physics.Raycast (raycastOrigin, Vector3.down, out hit, 100f, targetBackgroundLayer)) {
 			if (hit.collider != null) {
 				if (GetSpritePixelColorUnderMyTransform (hit.collider.gameObject.GetComponent<SpriteRenderer> (), out targetColor)) {
 					Debug.Log ("Color is " + targetColor.r + " " + targetColor.g + " " + targetColor.b + " ");
