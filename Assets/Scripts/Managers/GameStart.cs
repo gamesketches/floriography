@@ -9,12 +9,23 @@ public class GameStart : MonoBehaviour {
 		transform.root.Find("UI").Find("Controls").GetComponent<FadeImage>().InitializeVariables();
 
 		SetUpPlayer();
+		SetUpFlower();
 	}
 
 	void SetUpPlayer()
 	{
 		Transform player = transform.root.Find("Boy");
 		player.GetComponent<WinTest>().InitializeVariables();
+	}
+
+	void SetUpFlower()
+	{
+		Transform flower = transform.root.Find("Tulip");
+
+		foreach (Transform petal in flower)
+		{
+			if (petal.name.Contains("Petal")) { petal.GetComponent<ValueChanger>().InitializeVariables(); }
+		}
 	}
 
 	void Start()

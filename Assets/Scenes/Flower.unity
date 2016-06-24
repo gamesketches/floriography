@@ -247,6 +247,7 @@ GameObject:
   - 33: {fileID: 323340184}
   - 23: {fileID: 323340183}
   - 64: {fileID: 323340185}
+  - 114: {fileID: 323340186}
   m_Layer: 8
   m_Name: Petal 6
   m_TagString: Petal
@@ -313,6 +314,21 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300002, guid: 26ebdaa9f26494446af42afba73bc407, type: 3}
+--- !u!114 &323340186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 323340181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1991d01c34e4142efab1d2d5e49eedf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propertyName: _Breakpoint
+  gameDuration: 120
+  startValue: 0.03
+  endValue: 0
 --- !u!1 &373860375
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +492,7 @@ GameObject:
   - 33: {fileID: 441391421}
   - 23: {fileID: 441391420}
   - 64: {fileID: 441391422}
+  - 114: {fileID: 441391423}
   m_Layer: 8
   m_Name: Petal 5
   m_TagString: Petal
@@ -542,6 +559,21 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300004, guid: 26ebdaa9f26494446af42afba73bc407, type: 3}
+--- !u!114 &441391423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441391418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1991d01c34e4142efab1d2d5e49eedf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propertyName: _Multiplier
+  gameDuration: 120
+  startValue: 0
+  endValue: 1000
 --- !u!1 &460034501
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,6 +741,7 @@ GameObject:
   - 33: {fileID: 640738156}
   - 23: {fileID: 640738155}
   - 64: {fileID: 640738157}
+  - 114: {fileID: 640738158}
   m_Layer: 8
   m_Name: Petal 1
   m_TagString: Petal
@@ -775,6 +808,21 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300012, guid: 26ebdaa9f26494446af42afba73bc407, type: 3}
+--- !u!114 &640738158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 640738153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1991d01c34e4142efab1d2d5e49eedf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propertyName: _Multiplier
+  gameDuration: 120
+  startValue: 0
+  endValue: 1000
 --- !u!1001 &676026983
 Prefab:
   m_ObjectHideFlags: 0
@@ -1169,6 +1217,7 @@ GameObject:
   - 33: {fileID: 1154786307}
   - 23: {fileID: 1154786306}
   - 64: {fileID: 1154786308}
+  - 114: {fileID: 1154786309}
   m_Layer: 8
   m_Name: Petal 2
   m_TagString: Petal
@@ -1235,6 +1284,21 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300010, guid: 26ebdaa9f26494446af42afba73bc407, type: 3}
+--- !u!114 &1154786309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154786304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1991d01c34e4142efab1d2d5e49eedf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propertyName: _Breakpoint
+  gameDuration: 120
+  startValue: 5.8
+  endValue: 5
 --- !u!1 &1338848234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,6 +1597,7 @@ GameObject:
   - 33: {fileID: 1608812480}
   - 23: {fileID: 1608812479}
   - 64: {fileID: 1608812481}
+  - 114: {fileID: 1608812482}
   m_Layer: 8
   m_Name: Petal 4
   m_TagString: Petal
@@ -1599,6 +1664,21 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300006, guid: 26ebdaa9f26494446af42afba73bc407, type: 3}
+--- !u!114 &1608812482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608812477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1991d01c34e4142efab1d2d5e49eedf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propertyName: _Multiplier
+  gameDuration: 120
+  startValue: 0
+  endValue: 1000
 --- !u!1001 &1640518654
 Prefab:
   m_ObjectHideFlags: 0
@@ -1710,6 +1790,7 @@ GameObject:
   - 33: {fileID: 2039528907}
   - 23: {fileID: 2039528906}
   - 64: {fileID: 2039528908}
+  - 114: {fileID: 2039528909}
   m_Layer: 8
   m_Name: Petal 3
   m_TagString: Petal
@@ -1776,6 +1857,21 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300008, guid: 26ebdaa9f26494446af42afba73bc407, type: 3}
+--- !u!114 &2039528909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2039528904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1991d01c34e4142efab1d2d5e49eedf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propertyName: _Breakpoint
+  gameDuration: 120
+  startValue: 5.8
+  endValue: 5
 --- !u!1 &2074799454
 GameObject:
   m_ObjectHideFlags: 0

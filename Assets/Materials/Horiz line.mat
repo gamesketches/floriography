@@ -134,7 +134,7 @@ Material:
       data:
         first:
           name: _Breakpoint
-        second: 0.004
+        second: 5.8
       data:
         first:
           name: _Multiplier
