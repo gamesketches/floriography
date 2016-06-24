@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class Fade : MonoBehaviour {
+public class FadeImage : MonoBehaviour {
 
 	public float fadeDuration = 3.0f;
 	float fadeTimer = 0.0f;
@@ -19,7 +19,6 @@ public class Fade : MonoBehaviour {
 	{
 		while (fadeTimer <= fadeDuration)
 		{
-			Debug.Log(fadeTimer);
 			fadeTimer += Time.deltaTime;
 
 			controlDiagram.color = new Color(controlDiagram.color.r,

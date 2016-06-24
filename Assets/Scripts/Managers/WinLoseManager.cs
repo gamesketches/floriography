@@ -3,15 +3,25 @@ using System.Collections;
 
 public class WinLoseManager : MonoBehaviour {
 
-	public void PlayerWins()
+	public IEnumerator PlayerWins()
 	{
-		Debug.Log("You win! Happiness and joy are yours.");
+		yield return StartCoroutine(GetComponent<OpenClose>().GoToWaitLoc());
+
+		yield return StartCoroutine(GetComponent<OpenClose>().Close());
+
+		yield return StartCoroutine(transform.root.Find("UI").Find("Win text").GetComponent<FadeText>().FadeIn());
+
+		yield break;
 	}
 
 	public IEnumerator PlayerLoses()
 	{
 		yield return StartCoroutine(GetComponent<OpenClose>().GoToWaitLoc());
 
-		Debug.Log("You lose! The hopelessness of your love is spirit-crushing.");
+		yield return StartCoroutine(GetComponent<OpenClose>().Close());
+
+		yield return StartCoroutine(transform.root.Find("UI").Find("Lose text").GetComponent<FadeText>().FadeIn());
+
+		yield break;
 	}
 }
