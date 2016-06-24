@@ -130,7 +130,7 @@ Material:
       data:
         first:
           name: _Breakpoint
-        second: 0.2
+        second: 0.008
     m_Colors:
       data:
         first:

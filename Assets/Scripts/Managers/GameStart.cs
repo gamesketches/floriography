@@ -10,6 +10,15 @@ public class GameStart : MonoBehaviour {
 
 	void Start()
 	{
-		StartCoroutine(GetComponent<OpenClose>().Open());
+		StartCoroutine(BeginGame());
+	}
+
+	IEnumerator BeginGame()
+	{
+		yield return StartCoroutine(GetComponent<OpenClose>().Open());
+
+		yield return StartCoroutine(GetComponent<OpenClose>().GoToStart());
+
+		yield break;
 	}
 }
