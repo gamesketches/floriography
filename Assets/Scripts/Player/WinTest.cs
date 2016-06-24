@@ -8,6 +8,7 @@ public class WinTest : MonoBehaviour {
 	public void InitializeVariables()
 	{
 		winLoseManager = transform.root.Find("Scene manager").GetComponent<WinLoseManager>();
+		Debug.Log(winLoseManager);
 	}
 
 	void OnTriggerEnter(Collider other)

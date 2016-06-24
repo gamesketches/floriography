@@ -977,6 +977,7 @@ GameObject:
   - 4: {fileID: 990412789}
   - 114: {fileID: 990412791}
   - 114: {fileID: 990412790}
+  - 114: {fileID: 990412792}
   m_Layer: 0
   m_Name: Scene manager
   m_TagString: Untagged
@@ -1050,6 +1051,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5181119c86f7493f9fd17392f2c61b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &990412792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 990412788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 171539abbca6f49fdb8a65c3ce7e326d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &993427140

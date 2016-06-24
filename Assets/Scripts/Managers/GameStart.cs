@@ -7,6 +7,14 @@ public class GameStart : MonoBehaviour {
 	{
 		GetComponent<OpenClose>().InitializeVariables();
 		transform.root.Find("UI").Find("Controls").GetComponent<FadeImage>().InitializeVariables();
+
+		SetUpPlayer();
+	}
+
+	void SetUpPlayer()
+	{
+		Transform player = transform.root.Find("Boy");
+		player.GetComponent<WinTest>().InitializeVariables();
 	}
 
 	void Start()
