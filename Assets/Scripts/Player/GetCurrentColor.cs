@@ -5,9 +5,11 @@ public class GetCurrentColor : MonoBehaviour {
 
 	public LayerMask targetBackgroundLayer;
 	public float speed = 2f;
+	public GameObject targetScreen;
 
 	Vector3 screenPoint;
 	Color targetColor;
+
 
 
 	// Use this for initialization
@@ -27,30 +29,29 @@ public class GetCurrentColor : MonoBehaviour {
 		if (Physics.Raycast (raycastOrigin, Vector3.up * -1, out hit, 100f, targetBackgroundLayer)) {
 		//if (Physics.Raycast (raycastOrigin, Vector3.down, out hit, 100f, targetBackgroundLayer)) {
 			if (hit.collider != null) {
-				if (GetSpritePixelColorUnderMyTransform (hit.collider.gameObject.GetComponent<SpriteRenderer> (), out targetColor)) {
-					Debug.Log ("Color is " + targetColor.r + " " + targetColor.g + " " + targetColor.b + " ");
-				}
+				
+				Vector3 myPixelPosition = Camera.main.WorldToScreenPoint (transform.position);
 				Vector3 temp = hit.point;
 				temp.y += 0.01f;
 				transform.position = temp;
 				moveCharacter();
-				Renderer rend = hit.transform.GetComponent<Renderer>();
-				MeshCollider meshCollider = hit.collider as MeshCollider;
-				if (rend == null || rend.material == null || rend.material.mainTexture == null || meshCollider == null) {
-					if (rend == null) {
-						Debug.Log ("renderer is null!");
-					}
-					if (rend.material == null) {
-						Debug.Log ("render.material is null!");
-					}
-					if (rend.material.mainTexture == null) {
-						Debug.Log ("render.material.mainTexture is null!");
-					}
-					if (meshCollider == null) {
-						Debug.Log ("meshCollider is null!");
-					}
-					return;
-				}
+				Renderer rend = targetScreen.transform.GetComponent<Renderer>();
+//				MeshCollider meshCollider = hit.collider as MeshCollider;
+//				if (rend == null || rend.material == null || rend.material.mainTexture == null || meshCollider == null) {
+//					if (rend == null) {
+//						Debug.Log ("renderer is null!");
+//					}
+//					if (rend.material == null) {
+//						Debug.Log ("render.material is null!");
+//					}
+//					if (rend.material.mainTexture == null) {
+//						Debug.Log ("render.material.mainTexture is null!");
+//					}
+//					if (meshCollider == null) {
+//						Debug.Log ("meshCollider is null!");
+//					}
+//					return;
+//				}
 				RenderTexture rt = rend.material.mainTexture as RenderTexture;
 				if (rt == null) {
 					Debug.Log ("Not a render texture!");
@@ -58,12 +59,13 @@ public class GetCurrentColor : MonoBehaviour {
 				}
 				RenderTexture.active = rt;
 				Texture2D tex = new Texture2D (1, 1, TextureFormat.RGB24, false);
-				Vector2 pixelUV = hit.textureCoord;
+				//Vector2 pixelUV = hit.textureCoord;
+				Vector2 pixelUV = new Vector2(myPixelPosition.x / Camera.main.pixelWidth, myPixelPosition.y / Camera.main.pixelHeight);
 				pixelUV.x *= rt.width;
 				pixelUV.y *= rt.height;
 				tex.ReadPixels(new Rect((int)pixelUV.x, (int)pixelUV.y,1,1),0,0);
 				Color pixelColor = tex.GetPixel(0,0);
-				Debug.Log("Hit pixel : " + pixelUV.x + " : " + pixelUV.y + "\n" + pixelColor.r + " " + pixelColor.g + " " + pixelColor.b + " " );
+				Debug.Log("Hit pixel color : "  + pixelColor.r + " " + pixelColor.g + " " + pixelColor.b + " " );
 			} 
 		}else {
 			Debug.Log ("Hit nothing!");
