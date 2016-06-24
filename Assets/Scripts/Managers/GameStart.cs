@@ -6,6 +6,7 @@ public class GameStart : MonoBehaviour {
 	void Awake()
 	{
 		GetComponent<OpenClose>().InitializeVariables();
+		transform.root.Find("UI").Find("Controls").GetComponent<Fade>().InitializeVariables();
 	}
 
 	void Start()
@@ -18,6 +19,9 @@ public class GameStart : MonoBehaviour {
 		yield return StartCoroutine(GetComponent<OpenClose>().Open());
 
 		yield return StartCoroutine(GetComponent<OpenClose>().GoToStart());
+
+		yield return StartCoroutine(
+									transform.root.Find("UI").Find("Controls").GetComponent<Fade>().FadeOut());
 
 		yield break;
 	}

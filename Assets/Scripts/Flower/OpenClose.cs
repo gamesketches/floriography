@@ -94,14 +94,17 @@ public class OpenClose : MonoBehaviour {
 
 	public IEnumerator GoToWaitLoc()
 	{
+		Vector3 boyStart = transform.root.Find("Boy").position;
+		Vector3 girlStart = transform.root.Find("Bee").position;
+
 		while (moveTimer <= moveDuration)
 		{
 			moveTimer += Time.deltaTime;
 
-			Vector3 boyLoc = Vector3.Lerp(openPos[boy], closedPos[boy], moveAnimCurve.Evaluate(moveTimer/moveDuration));
+			Vector3 boyLoc = Vector3.Lerp(boyStart, closedPos[boy], moveAnimCurve.Evaluate(moveTimer/moveDuration));
 			boy.transform.position = boyLoc;
 
-			Vector3 girlLoc = Vector3.Lerp(openPos[girl], closedPos[girl], moveAnimCurve.Evaluate(moveTimer/moveDuration));
+			Vector3 girlLoc = Vector3.Lerp(girlStart, closedPos[girl], moveAnimCurve.Evaluate(moveTimer/moveDuration));
 			girl.transform.position = girlLoc;
 
 			yield return null;
