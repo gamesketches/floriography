@@ -32,7 +32,6 @@ public class OpenClose : MonoBehaviour {
 	{
 		while (petalTimer <= petalDuration)
 		{
-			Debug.Log("In while loop");
 			petalTimer += Time.deltaTime;
 
 			foreach (Transform petal in petals)
@@ -83,6 +82,26 @@ public class OpenClose : MonoBehaviour {
 			boy.transform.position = boyLoc;
 
 			Vector3 girlLoc = Vector3.Lerp(closedPos[girl], openPos[girl], moveAnimCurve.Evaluate(moveTimer/moveDuration));
+			girl.transform.position = girlLoc;
+
+			yield return null;
+		}
+
+		moveTimer = 0.0f;
+
+		yield break;
+	}
+
+	public IEnumerator GoToWaitLoc()
+	{
+		while (moveTimer <= moveDuration)
+		{
+			moveTimer += Time.deltaTime;
+
+			Vector3 boyLoc = Vector3.Lerp(openPos[boy], closedPos[boy], moveAnimCurve.Evaluate(moveTimer/moveDuration));
+			boy.transform.position = boyLoc;
+
+			Vector3 girlLoc = Vector3.Lerp(openPos[girl], closedPos[girl], moveAnimCurve.Evaluate(moveTimer/moveDuration));
 			girl.transform.position = girlLoc;
 
 			yield return null;
