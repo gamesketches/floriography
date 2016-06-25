@@ -13,6 +13,10 @@ public class WinTest : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.transform.name.Contains("Bee")) { winLoseManager.PlayerWins(); }
+		
+		if (other.transform.name.Contains("Bee")) { 
+			Debug.Log (other.transform.name);
+			StartCoroutine (winLoseManager.PlayerWins ());
+		}
 	}
 }

@@ -305,7 +305,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2004,7 +2004,7 @@ Camera:
     m_Bits: 257
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: bd3ae97a9dc294cecb42993597d07fa6, type: 2}
-  m_TargetDisplay: 0
+  m_TargetDisplay: 2
   m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
@@ -2367,7 +2367,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01, y: 0.01, z: 0.01}
+  m_Size: {x: 0.03, y: 0.1, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0.008}
 --- !u!4 &1640518658 stripped
 Transform:
@@ -2611,7 +2611,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   speed: 0.2
-  targetScreen: {fileID: 0}
+  targetScreen: {fileID: 588370181}
 --- !u!1 &2122785374
 GameObject:
   m_ObjectHideFlags: 0

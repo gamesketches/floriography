@@ -26,6 +26,8 @@ public class GetCurrentColor : MonoBehaviour {
 		RaycastHit hit = new RaycastHit ();
 		Vector3 raycastOrigin = transform.position + (GetDeltaPosition() * Time.deltaTime * speed);
 		raycastOrigin.y += 1f;
+		Vector3 currentPosition = transform.position;
+		moveCharacter();
 		if (Physics.Raycast (raycastOrigin, Vector3.up * -1, out hit, 100f, targetBackgroundLayer)) {
 		//if (Physics.Raycast (raycastOrigin, Vector3.down, out hit, 100f, targetBackgroundLayer)) {
 			if (hit.collider != null) {
@@ -34,7 +36,7 @@ public class GetCurrentColor : MonoBehaviour {
 				Vector3 temp = hit.point;
 				temp.y += 0.01f;
 				transform.position = temp;
-				moveCharacter();
+
 				Renderer rend = targetScreen.transform.GetComponent<Renderer>();
 //				MeshCollider meshCollider = hit.collider as MeshCollider;
 //				if (rend == null || rend.material == null || rend.material.mainTexture == null || meshCollider == null) {
@@ -65,11 +67,13 @@ public class GetCurrentColor : MonoBehaviour {
 				pixelUV.y *= rt.height;
 				tex.ReadPixels(new Rect((int)pixelUV.x, (int)pixelUV.y,1,1),0,0);
 				Color pixelColor = tex.GetPixel(0,0);
-				Debug.Log("Hit pixel color : "  + pixelColor.r + " " + pixelColor.g + " " + pixelColor.b + " " );
+				//Debug.Log("Hit pixel color : "  + pixelColor.r + " " + pixelColor.g + " " + pixelColor.b + " " );
 			} 
 		}else {
-			Debug.Log ("Hit nothing!");
+			//Debug.Log ("Hit nothing!");
+			transform.position = currentPosition;
 		}
+
 	}
 
 	public bool GetSpritePixelColorUnderMyTransform(SpriteRenderer spriteRenderer, out Color color) {
