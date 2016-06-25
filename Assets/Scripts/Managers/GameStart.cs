@@ -7,6 +7,7 @@ public class GameStart : MonoBehaviour {
 	{
 		GetComponent<OpenClose>().InitializeVariables();
 		transform.root.Find("UI").Find("Controls").GetComponent<FadeImage>().InitializeVariables();
+		transform.root.Find("UI").Find("Win text").GetComponent<FadeText>().InitializeVariables();
 
 		SetUpPlayer();
 		SetUpFlower();
