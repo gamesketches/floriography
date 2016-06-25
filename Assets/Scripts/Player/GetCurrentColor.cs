@@ -24,7 +24,7 @@ public class GetCurrentColor : MonoBehaviour {
 		Debug.DrawRay (transform.position, Vector3.up * -1, Color.blue, 5.0f, false);
 		//Debug.DrawRay (transform.position, Vector3.down, Color.blue, 5.0f, false);
 		RaycastHit hit = new RaycastHit ();
-		Vector3 raycastOrigin = transform.position;
+		Vector3 raycastOrigin = transform.position + (GetDeltaPosition() * Time.deltaTime * speed);
 		raycastOrigin.y += 1f;
 		if (Physics.Raycast (raycastOrigin, Vector3.up * -1, out hit, 100f, targetBackgroundLayer)) {
 		//if (Physics.Raycast (raycastOrigin, Vector3.down, out hit, 100f, targetBackgroundLayer)) {
@@ -123,17 +123,22 @@ public class GetCurrentColor : MonoBehaviour {
 	}
 
 	void moveCharacter() {
+		transform.position += GetDeltaPosition() * Time.deltaTime * speed;
+	}
+
+	Vector3 GetDeltaPosition() {
 		if (Input.GetKey (KeyCode.DownArrow)) {
-			transform.position += new Vector3 (0f, 0f, -1f) * Time.deltaTime * speed;
+			return new Vector3 (0f, 0f, -1f);
 		}
 		if (Input.GetKey (KeyCode.UpArrow)) {
-			transform.position += new Vector3 (0f, 0f, 1f)* Time.deltaTime * speed;
+			return new Vector3 (0f, 0f, 1f);
 		}
 		if (Input.GetKey (KeyCode.LeftArrow)) {
-			transform.position += new Vector3 (-1f, 0f, 0f)* Time.deltaTime * speed;
+			return new Vector3 (-1f, 0f, 0f);
 		}
 		if (Input.GetKey (KeyCode.RightArrow)) {
-			transform.position += new Vector3 (1f, 0f, 0f)* Time.deltaTime * speed;
+			return new Vector3 (1f, 0f, 0f);
 		}
+			return Vector3.zero;
 	}
 }
