@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Horiz line
-  m_Shader: {fileID: 4800000, guid: e2e4c8209adf84e6ca677194a882c5e5, type: 3}
+  m_Shader: {fileID: 4800000, guid: fcf3481239b14448f9de4f88d5e73871, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: 2000

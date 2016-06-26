@@ -413,10 +413,27 @@ MonoBehaviour:
   endValue: 0
   animCurve:
     serializedVersion: 2
+<<<<<<< Updated upstream
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+>>>>>>> Stashed changes
 --- !u!1 &373860375
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,10 +686,27 @@ MonoBehaviour:
   endValue: 1000
   animCurve:
     serializedVersion: 2
+<<<<<<< Updated upstream
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+>>>>>>> Stashed changes
 --- !u!1 &460034501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,10 +1038,27 @@ MonoBehaviour:
   endValue: 1000
   animCurve:
     serializedVersion: 2
+<<<<<<< Updated upstream
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+>>>>>>> Stashed changes
 --- !u!1001 &676026983
 Prefab:
   m_ObjectHideFlags: 0
@@ -1513,7 +1564,7 @@ GameObject:
   - 4: {fileID: 993427141}
   - 33: {fileID: 993427143}
   - 23: {fileID: 993427142}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1725,10 +1776,27 @@ MonoBehaviour:
   endValue: 5
   animCurve:
     serializedVersion: 2
+<<<<<<< Updated upstream
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+>>>>>>> Stashed changes
 --- !u!1 &1338848234
 GameObject:
   m_ObjectHideFlags: 0
@@ -2204,10 +2272,27 @@ MonoBehaviour:
   endValue: 1000
   animCurve:
     serializedVersion: 2
+<<<<<<< Updated upstream
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+>>>>>>> Stashed changes
 --- !u!1001 &1640518654
 Prefab:
   m_ObjectHideFlags: 0
@@ -2560,10 +2645,27 @@ MonoBehaviour:
   endValue: 5
   animCurve:
     serializedVersion: 2
+<<<<<<< Updated upstream
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+>>>>>>> Stashed changes
 --- !u!1 &2074799454
 GameObject:
   m_ObjectHideFlags: 0
