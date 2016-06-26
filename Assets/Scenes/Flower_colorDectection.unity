@@ -109,7 +109,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1375411993}
   m_RootOrder: 1
@@ -141,7 +140,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 293785978}
   - {fileID: 2122785376}
@@ -236,7 +234,6 @@ Transform:
   m_LocalRotation: {x: 0.38268346, y: 0, z: 0, w: 0.9238795}
   m_LocalPosition: {x: 0, y: 6.3, z: -0.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
   m_Children:
   - {fileID: 1541968429}
   - {fileID: 588370182}
@@ -270,7 +267,6 @@ Transform:
   m_LocalRotation: {x: 0.20426056, y: 0.046964232, z: -0.009811339, w: 0.9777401}
   m_LocalPosition: {x: 0.02124413, y: 0.0038972178, z: 0.49799094}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 23.599998, y: 5.5, z: 0}
   m_Children: []
   m_Father: {fileID: 414249729}
   m_RootOrder: 5
@@ -338,10 +334,20 @@ MonoBehaviour:
   endValue: 0
   animCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1 &373860375
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +406,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -428,7 +433,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 976587691}
   - {fileID: 2074799455}
@@ -458,7 +462,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1496554430}
   m_RootOrder: 1
@@ -486,7 +489,6 @@ Transform:
   m_LocalRotation: {x: 0.2987509, y: 0.6408962, z: 0.64089614, w: -0.29875088}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
-  m_LocalEulerAnglesHint: {x: -90, y: -130.01529, z: 0}
   m_Children:
   - {fileID: 640738154}
   - {fileID: 1154786305}
@@ -526,7 +528,6 @@ Transform:
   m_LocalRotation: {x: 0.33728635, y: 0.25595924, z: 0.19728729, w: 0.88419485}
   m_LocalPosition: {x: 0.018019652, y: 0.0077379304, z: 0.49799106}
   m_LocalScale: {x: 0, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 29.699999, y: 42.399998, z: 36.899998}
   m_Children: []
   m_Father: {fileID: 414249729}
   m_RootOrder: 4
@@ -594,10 +595,20 @@ MonoBehaviour:
   endValue: 1000
   animCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1 &460034501
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +633,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 976587691}
   m_RootOrder: 1
@@ -653,7 +663,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.00016982}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 927627765}
   m_RootOrder: 1
@@ -753,7 +762,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 414249729}
   m_RootOrder: 7
@@ -784,7 +792,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0, z: 7.81}
   m_LocalScale: {x: 16, y: 9, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 293785978}
   m_RootOrder: 1
@@ -861,7 +868,6 @@ Transform:
   m_LocalRotation: {x: -0.20974547, y: 0.08288243, z: 0.10645912, w: 0.96840274}
   m_LocalPosition: {x: 0.022728762, y: 0.0075978707, z: 0.49881327}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: -25.08, y: 7.35, z: 10.91}
   m_Children: []
   m_Father: {fileID: 414249729}
   m_RootOrder: 0
@@ -929,10 +935,20 @@ MonoBehaviour:
   endValue: 1000
   animCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1001 &676026983
 Prefab:
   m_ObjectHideFlags: 0
@@ -1232,7 +1248,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
   m_Children:
   - {fileID: 1564496082}
   - {fileID: 501080050}
@@ -1296,7 +1311,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1324,7 +1338,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 993427141}
   - {fileID: 460034502}
@@ -1357,7 +1370,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 243361103}
   m_RootOrder: 2
@@ -1454,7 +1466,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 976587691}
   m_RootOrder: 0
@@ -1520,7 +1531,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1338848235}
   m_RootOrder: 1
@@ -1548,7 +1558,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1820072308}
   - {fileID: 922361923}
@@ -1582,7 +1591,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.17923152, z: 0, w: 0.98380697}
   m_LocalPosition: {x: 0.021244144, y: 0.0038972169, z: 0.49799094}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 414249729}
   m_RootOrder: 1
@@ -1644,16 +1652,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1991d01c34e4142efab1d2d5e49eedf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  propertyName: _Breakpoint
+  propertyName: _Multiplier
   gameDuration: 120
-  startValue: 5.8
-  endValue: 5
+  startValue: 0
+  endValue: 1000
   animCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1 &1338848234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,7 +1696,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1496554430}
   - {fileID: 1093935789}
@@ -1708,7 +1725,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 374952368}
   - {fileID: 142680169}
@@ -1738,7 +1754,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1375411993}
   - {fileID: 389478782}
@@ -1771,7 +1786,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.000090108}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 927627765}
   m_RootOrder: 2
@@ -1877,7 +1891,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 293785978}
   m_RootOrder: 0
@@ -1963,7 +1976,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 927627765}
   m_RootOrder: 0
@@ -2061,7 +2073,6 @@ Transform:
   m_LocalRotation: {x: 0, y: -0.22758617, z: 0, w: 0.9737579}
   m_LocalPosition: {x: 0.021244135, y: 0.0038972162, z: 0.49799094}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 414249729}
   m_RootOrder: 3
@@ -2129,10 +2140,20 @@ MonoBehaviour:
   endValue: 1000
   animCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1001 &1640518654
 Prefab:
   m_ObjectHideFlags: 0
@@ -2340,7 +2361,6 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 47, y: 50, z: 1}
-  m_LocalEulerAnglesHint: {x: 89.980194, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1107686442}
   m_RootOrder: 0
@@ -2417,7 +2437,6 @@ Transform:
   m_LocalRotation: {x: -0.1766914, y: -0.14458285, z: -0.026249094, w: 0.9732353}
   m_LocalPosition: {x: 0.021244138, y: 0.0038972162, z: 0.49799094}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: -20.58, y: -16.9, z: 0}
   m_Children: []
   m_Father: {fileID: 414249729}
   m_RootOrder: 2
@@ -2479,16 +2498,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1991d01c34e4142efab1d2d5e49eedf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  propertyName: _Breakpoint
+  propertyName: _Radius
   gameDuration: 120
-  startValue: 5.8
-  endValue: 5
+  startValue: 5.4
+  endValue: 6.2
   animCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1 &2074799454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,7 +2542,6 @@ Transform:
   m_LocalRotation: {x: 4.440892e-16, y: -2.6645353e-15, z: 0, w: 1}
   m_LocalPosition: {x: -0.0000000047683715, y: 0, z: 5.684342e-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 374952368}
   m_RootOrder: 1
@@ -2595,7 +2623,6 @@ Transform:
   m_LocalRotation: {x: 0.40821794, y: -0.23456973, z: 0.109381676, w: 0.87542605}
   m_LocalPosition: {x: 0, y: 20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
   m_Children: []
   m_Father: {fileID: 243361103}
   m_RootOrder: 1

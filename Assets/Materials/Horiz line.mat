@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Horiz line
-  m_Shader: {fileID: 4800000, guid: fcf3481239b14448f9de4f88d5e73871, type: 3}
+  m_Shader: {fileID: 4800000, guid: 85567773f8c544cffa45e05b3ea424bd, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: 2000
@@ -82,7 +82,7 @@ Material:
       data:
         first:
           name: _Radius
-        second: 1.14
+        second: 5.4
       data:
         first:
           name: _SrcBlend
@@ -134,7 +134,7 @@ Material:
       data:
         first:
           name: _Breakpoint
-        second: 5.8
+        second: 0.4
       data:
         first:
           name: _Multiplier

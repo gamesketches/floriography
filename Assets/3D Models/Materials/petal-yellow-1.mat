@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: petal-yellow-1
-  m_Shader: {fileID: 4800000, guid: 23e138aa3b57c4bd4952f12e002649e2, type: 3}
+  m_Shader: {fileID: 4800000, guid: a4efd7f7f80e6430c9c792b8282202de, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: 2000
